@@ -1,4 +1,5 @@
 Problem:
+========
   Only a python source is provided and no other description of the problem.
 
 Approach:
@@ -16,4 +17,5 @@ Open a python shell and loop through the missing letters of the flag.
 e584b363
 
 Solution:
+=========
   picoCTF{1n_7h3_|<3y_of_e584b363}
