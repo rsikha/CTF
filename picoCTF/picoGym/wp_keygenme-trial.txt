@@ -1,0 +1,19 @@
+Problem:
+  Only a python source is provided and no other description of the problem.
+
+Approach:
+=========
+First, opened the file using an editor(e.g. vim) and tried to go through the code as to understand what is it all about.
+
+Here, we see that our flag is present but it is made up of both 'static' and 'dynamic' part. If the dynamic part can be calculated, we complete flag can be assembled. The function "check_key" is where the 'dynamic' part of the key is calculated.
+
+Open a python shell and loop through the missing letters of the flag.
+
+>>> import hashlib
+>>> for i in list(map(lambda x: int (x), "4 5 3 6 2 7 1 8".split())):
+...   print(hashlib.sha256(b'SCHOFIELD').hexdigest()[i], end="")
+...
+e584b363
+
+Solution:
+  picoCTF{1n_7h3_|<3y_of_e584b363}
